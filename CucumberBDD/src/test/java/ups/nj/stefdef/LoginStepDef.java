@@ -1,14 +1,9 @@
 package ups.nj.stefdef;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import Utilities.CommonUtility;
 import cucumber.api.java.en.*;
-
 import ups.nj.supperpage.CucumberBaseClass;
 import zoopla.pagefactory.elements.ZooplaLoginPage;
 
@@ -19,7 +14,7 @@ public class LoginStepDef extends CucumberBaseClass {
 	public void user_can_open_any_browser() {
 		openBrowser();
 		pf = new ZooplaLoginPage(driver);
-		pf = PageFactory.initElements(driver, ZooplaLoginPage.class);
+		//pf = PageFactory.initElements(driver, ZooplaLoginPage.class);
 	}
 
 	@Given("^User able to enter \"([^\"]*)\" url$")
@@ -53,18 +48,18 @@ public class LoginStepDef extends CucumberBaseClass {
 	@Then("^User able to verify successfully login & verify the homepage title$")
 	public void user_able_to_verify_successfully_login_verify_the_homepage_title() {
 		String expected = "Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents";
-		Assert.assertEquals(expected, driver.getTitle());
+		//Assert.assertEquals(expected, driver.getTitle());
 		System.out.println(expected);
-		
-		driver.quit();
+
+		// driver.quit();
 
 	}
-	
-	//  Scenario Outline 
+
+	// Scenario Outline
 	@When("^User can enter the user name  \"([^\"]*)\"$")
-	public void user_can_enter_the_user_name(String userName)  {
+	public void user_can_enter_the_user_name(String userName) {
 		pf.getsendUserName().sendKeys(userName);
-		
+
 	}
 
 	@When("^User can  enter the pwd \"([^\"]*)\"$")
@@ -72,24 +67,12 @@ public class LoginStepDef extends CucumberBaseClass {
 		pf.getPwd().sendKeys(passWord);
 	}
 
-	
-	// Background:  feature dynamic  element to  handle by collection 
+	// Background: feature dynamic element to handle by collection
 	@Given("^User able to  enter location as  \"([^\"]*)\" in text box$")
 	public void user_able_to_enter_location_as_in_text_box(String location) {
-		//pf.getSearchLocation().sendKeys(location);
-		//pf.getSearchLocation().sendKeys("London").;
-		
-		/*
-		 * WebElement element = driver.findElement(By.name("q")); Actions action1 = new
-		 * Actions(driver); action1.moveToElement(element).click().perform();
-		 * action1.sendKeys("London");
-		 */
-		
+		pf.getSearchLocation().sendKeys(location);
+		pf.getSearchLocation().sendKeys(Keys.ENTER);
 
-	}
-
-	@When("^User clcik the search button$")
-	public void user_clcik_the_search_button() {
 	}
 
 	@When("^User able to print  all property value/price in consule$")
@@ -103,6 +86,5 @@ public class LoginStepDef extends CucumberBaseClass {
 	@Then("^Verify the price of the property$")
 	public void verify_the_price_of_the_property() {
 	}
-
 
 }

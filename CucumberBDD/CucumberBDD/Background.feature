@@ -12,9 +12,8 @@ Background:
 	Then User able to verify successfully login & verify the homepage title 
 
 Scenario: User can search the property & verify the price 
-	Given User able to  enter location as  "London" in text box
-	When User clcik the search button
-	And User able to print  all property value/price in consule 
+	Given User able to  enter location as  "New York, Lincolnshire" in text box
+	When User able to print  all property value/price in consule 
 	And User able to click on the thard property 
 	Then Verify the price of the property 
 	
