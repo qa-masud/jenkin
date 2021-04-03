@@ -6,7 +6,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
@@ -16,6 +15,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 				//"json:target/cucumber-reports/cucumber.json"},
 		features = "CucumberBDD/loginFunction.feature",
 		glue = "ups.nj.stefdef",
+		//tags = "@TC_001, TC_002",
 		//strict=false,  // 
 		  monochrome=true, //  readable
 		  dryRun=false      // with out browser execute

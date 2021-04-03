@@ -1,7 +1,11 @@
 package ups.nj.stefdef;
 
+import java.io.IOException;
+
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+
 import Utilities.CommonUtility;
 import cucumber.api.java.en.*;
 import ups.nj.supperpage.CucumberBaseClass;
@@ -12,9 +16,9 @@ public class LoginStepDef extends CucumberBaseClass {
 
 	@Given("^User can open any browser$")
 	public void user_can_open_any_browser() {
-		openBrowser();
-		pf = new ZooplaLoginPage(driver);
-		//pf = PageFactory.initElements(driver, ZooplaLoginPage.class);
+		setUP();
+		//pf = new ZooplaLoginPage(driver);
+		 pf = PageFactory.initElements(driver, ZooplaLoginPage.class);
 	}
 
 	@Given("^User able to enter \"([^\"]*)\" url$")
@@ -32,13 +36,15 @@ public class LoginStepDef extends CucumberBaseClass {
 		pf.getClickingSigninBTN().click();
 	}
 
+	
+	// this on first run
 	@When("^User enter the userName \"([^\"]*)\" and password \"([^\"]*)\"$")
 	public void user_enter_the_userName_and_password(String userName, String pwd) {
 		pf.getsendUserName().sendKeys(userName);
 		pf.getPwd().sendKeys(pwd);
 
 	}
-
+   // This one is 2nd
 	@When("^User click on the signing button$")
 	public void user_click_on_the_signing_button() {
 		pf.getPwd().submit();
@@ -48,10 +54,13 @@ public class LoginStepDef extends CucumberBaseClass {
 	@Then("^User able to verify successfully login & verify the homepage title$")
 	public void user_able_to_verify_successfully_login_verify_the_homepage_title() {
 		String expected = "Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents";
-		//Assert.assertEquals(expected, driver.getTitle());
+		 Assert.assertEquals(expected, driver.getTitle());
 		System.out.println(expected);
 
-		// driver.quit();
+	   //driver.close();  // Only close the browser
+		driver.quit();    // Close the browser as well as server
+		
+		// IE browser what kind of challenge you get it & How resolved it
 
 	}
 

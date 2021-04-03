@@ -1,6 +1,7 @@
 package zoopla.pagefactory.elements;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -14,6 +15,8 @@ public class ZooplaLoginPage extends CucumberBaseClass {
 		PageFactory.initElements(driver, this);
 	}
 
+
+	
 	@FindBy(xpath = "(//*[text()='Sign in'])[1]") 
 	@CacheLookup
 	private WebElement clickingSigninBTN;

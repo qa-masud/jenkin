@@ -2,7 +2,7 @@ Feature: User able to login with valid username & password
 
 Description: "User login zoopla website & search the property &"
         "select  the  property as well as verify the property price."                         
-@smokeTest
+@TC_001
 Scenario Outline: User login with valid username & verify the page title
 Given User can open any browser
 And User able to enter "https://www.zoopla.co.uk/" url
