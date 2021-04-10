@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10553" started-at="2021-04-10T18:44:40 EDT" finished-at="2021-04-10T18:44:50 EDT">
+  <suite name="Automation Test Suite" duration-ms="26620" started-at="2021-04-10T19:19:44 EDT" finished-at="2021-04-10T19:20:10 EDT">
     <groups>
+      <group name="cucumber">
+        <method signature="LoginRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ups.nj.myrunner.LoginRunner@7920ba90]" name="feature" class="ups.nj.myrunner.LoginRunner"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="10553" started-at="2021-04-10T18:44:40 EDT" finished-at="2021-04-10T18:44:50 EDT">
-      <class name="com.readExcel.ReadExcelData">
-        <test-method status="PASS" signature="loginWebZooplaPage()[pri:0, instance:com.readExcel.ReadExcelData@55a561cf]" name="loginWebZooplaPage" duration-ms="10514" started-at="2021-04-10T18:44:40 EDT" finished-at="2021-04-10T18:44:50 EDT">
+    <test name="PMCS Login test" duration-ms="26620" started-at="2021-04-10T19:19:44 EDT" finished-at="2021-04-10T19:20:10 EDT">
+      <class name="ups.nj.myrunner.LoginRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:ups.nj.myrunner.LoginRunner@7920ba90]" name="setUpClass" is-config="true" duration-ms="398" started-at="2021-04-10T19:19:44 EDT" finished-at="2021-04-10T19:19:44 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWebZooplaPage -->
-      </class> <!-- com.readExcel.ReadExcelData -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ups.nj.myrunner.LoginRunner@7920ba90]" name="feature" duration-ms="18473" started-at="2021-04-10T19:19:44 EDT" description="Runs LoginCandiate Feature" data-provider="features" finished-at="2021-04-10T19:20:03 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User able to login with valid username & password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ups.nj.myrunner.LoginRunner@7920ba90]" name="feature" duration-ms="7544" started-at="2021-04-10T19:20:03 EDT" description="Runs LoginCandiate Feature" data-provider="features" finished-at="2021-04-10T19:20:10 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User able to login with valid username & password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ups.nj.myrunner.LoginRunner@7920ba90]" name="tearDownClass" is-config="true" duration-ms="27" started-at="2021-04-10T19:20:10 EDT" finished-at="2021-04-10T19:20:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- ups.nj.myrunner.LoginRunner -->
+    </test> <!-- PMCS Login test -->
+  </suite> <!-- Automation Test Suite -->
 </testng-results>

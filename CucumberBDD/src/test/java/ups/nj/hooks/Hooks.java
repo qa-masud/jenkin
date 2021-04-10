@@ -11,6 +11,8 @@ public class Hooks extends CucumberBaseClass{
     public void applicationStart() {
     	setUP();
     }
+    
+    
     @After   // This is Cucumber hooks
  	public void tearDown() {
  		driver.quit();

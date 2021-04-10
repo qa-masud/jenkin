@@ -18,23 +18,38 @@ import ups.nj.supperpage.CucumberBaseClass;
 
 public class ReadExcelData extends CucumberBaseClass{
 		public String path = "/Users/mohammedalam/git/repository3/CucumberBDD/TestData/testData.xlsx";
-
-	    public ArrayList<String> readExcel(int colno) throws IOException	{		
-		FileInputStream read = new FileInputStream(path);				
-		XSSFWorkbook workbook = new XSSFWorkbook(read);				
-	    XSSFSheet sheet = workbook.getSheet("data");	       
+        
+		// This is a arraylist return method 
+	    public ArrayList<String> readExcel(int colno) throws IOException	{	
+	    	
+	    // This is a java FileInputStream class to import the file location
+		FileInputStream read = new FileInputStream(path);	
+		
+		// This line read the file from excel using Apache POI -> XSSFWorkbook class
+		XSSFWorkbook workbook = new XSSFWorkbook(read);	
+		
+		// This line read the sheet name from excel using Apache POI -> XSSFSheet class
+	    XSSFSheet sheet = workbook.getSheet("data");
+	    
+	    // This line for read the all the value & ignore the header
 	    Iterator<Row> rowiterator = sheet.iterator();
-	    rowiterator.next();    
-	    ArrayList<String> list = new ArrayList<String>();	    
+	    rowiterator.next(); 
+	    
+	    // This line for control the all excel sheet data
+	    ArrayList<String> list = new ArrayList<String>();	
+	    
+	    
+	    // This looping for control the  all the column & row 
 	    while(rowiterator.hasNext()) {
 	    	list.add(rowiterator.next().getCell(colno).getStringCellValue());
 	    }
+	    // This is my return value 
 	    return list;
 	}	
 	@Test
 	public void loginWebZooplaPage() throws IOException {	
-		//System.out.println("This  is my userName : "+readExcel(0));
-		//System.out.println("This  is my password : "+readExcel(1));
+		System.out.println("This  is my userName : "+readExcel(0));
+		System.out.println("This  is my password : "+readExcel(1));
 				
         System.setProperty("webdriver.chrome.driver", "/Applications/chromedriver");
 		driver = new ChromeDriver();

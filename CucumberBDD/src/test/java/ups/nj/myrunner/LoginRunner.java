@@ -14,7 +14,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 		plugin= {"pretty","json:CucumberReport/cucumber-reports/cucumber.json"},
 		features = "CucumberBDD/",
 		glue = {"ups.nj.stefdef","ups.nj.hooks"},
-		tags = "@Automation",
+		tags = "@sanity",
 		monochrome=true, //  readable
 		dryRun=false      // with out browser execute
 		)
