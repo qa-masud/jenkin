@@ -1,13 +1,11 @@
 package ups.nj.stefdef;
 
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
 import Utilities.CommonUtility;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.*;
 import ups.nj.supperpage.CucumberBaseClass;
 import zoopla.pagefactory.elements.ZooplaLoginPage;
@@ -17,7 +15,6 @@ public class LoginStepDef extends CucumberBaseClass {
 
 	@Given("^User can open any browser$")
 	public void user_can_open_any_browser() {
-		setUP();
 		//pf = new ZooplaLoginPage(driver);
 		 pf = PageFactory.initElements(driver, ZooplaLoginPage.class);
 	}
@@ -57,12 +54,6 @@ public class LoginStepDef extends CucumberBaseClass {
 		String expected = "Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents";
 		 Assert.assertEquals(expected, driver.getTitle());
 		System.out.println(expected);
-
-	   //driver.close();  // Only close the browser
-		//driver.quit();    // Close the browser as well as server
-		
-		// IE browser what kind of challenge you get it & How resolved it
-
 	}
 
 	// Scenario Outline
@@ -95,9 +86,11 @@ public class LoginStepDef extends CucumberBaseClass {
 	public void verify_the_price_of_the_property() {
      String price = pf.getVerifyThePrice().getText();
      System.out.println("My Property price : " + price);     
-     Assert.assertEquals(price, true);
      
      
 	}
+    
+    
+	
 
 }

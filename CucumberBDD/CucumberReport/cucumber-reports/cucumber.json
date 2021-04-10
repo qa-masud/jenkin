@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2910238778,
+              "duration": 141511799,
               "status": "passed"
             },
             "line": 8,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 1513435836,
+              "duration": 1311041119,
               "status": "passed"
             },
             "line": 9,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 1536229203,
+              "duration": 1431310706,
               "status": "passed"
             },
             "line": 10,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 455870823,
+              "duration": 279420143,
               "status": "passed"
             },
             "line": 11,
@@ -75,7 +75,7 @@
           },
           {
             "result": {
-              "duration": 1704153037,
+              "duration": 1777018950,
               "status": "passed"
             },
             "line": 12,
@@ -87,7 +87,7 @@
           },
           {
             "result": {
-              "duration": 8734121,
+              "duration": 6375903,
               "status": "passed"
             },
             "line": 13,
@@ -100,16 +100,38 @@
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 2389287305,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.applicationStart()"
+            }
+          }
+        ],
         "line": 15,
         "name": "User can search the property \u0026 verify the price",
         "description": "",
         "id": "user-able-to-login-with-valid-username-\u0026-password;user-can-search-the-property-\u0026-verify-the-price",
+        "after": [
+          {
+            "result": {
+              "duration": 225020912,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3394644702,
+              "duration": 2624656003,
               "status": "passed"
             },
             "line": 16,
@@ -127,7 +149,7 @@
           },
           {
             "result": {
-              "duration": 6385449797,
+              "duration": 3400065733,
               "status": "passed"
             },
             "line": 17,
@@ -139,7 +161,7 @@
           },
           {
             "result": {
-              "duration": 129258078,
+              "duration": 74790391,
               "status": "passed"
             },
             "line": 18,
