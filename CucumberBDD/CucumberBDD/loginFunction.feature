@@ -1,3 +1,4 @@
+@smoke
 Feature: User able to login with valid username & password
 
 Description: "User login zoopla website & search the property &"

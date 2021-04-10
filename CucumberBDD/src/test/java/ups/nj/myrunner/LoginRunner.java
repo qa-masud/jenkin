@@ -12,16 +12,13 @@ import cucumber.api.testng.TestNGCucumberRunner;
 @CucumberOptions(  
 		
 		plugin= {"pretty","json:CucumberReport/cucumber-reports/cucumber.json"},
-				//"json:target/cucumber-reports/cucumber.json"},
-		features = "CucumberBDD/loginFunction.feature",
+		features = "CucumberBDD/",
 		glue = "ups.nj.stefdef",
-		//tags = "@TC_001, TC_002",
-		//strict=false,  // 
-		  monochrome=true, //  readable
-		  dryRun=false      // with out browser execute
+		tags = "@Automation",
+		monochrome=true, //  readable
+		dryRun=false      // with out browser execute
 		)
 public class LoginRunner  {
-
 
     private TestNGCucumberRunner testNGCucumberRunner;
  

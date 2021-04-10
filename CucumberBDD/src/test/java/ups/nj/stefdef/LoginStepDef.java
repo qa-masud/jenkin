@@ -1,8 +1,9 @@
 package ups.nj.stefdef;
 
-import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
@@ -58,7 +59,7 @@ public class LoginStepDef extends CucumberBaseClass {
 		System.out.println(expected);
 
 	   //driver.close();  // Only close the browser
-		driver.quit();    // Close the browser as well as server
+		//driver.quit();    // Close the browser as well as server
 		
 		// IE browser what kind of challenge you get it & How resolved it
 
@@ -78,22 +79,25 @@ public class LoginStepDef extends CucumberBaseClass {
 
 	// Background: feature dynamic element to handle by collection
 	@Given("^User able to  enter location as  \"([^\"]*)\" in text box$")
-	public void user_able_to_enter_location_as_in_text_box(String location) {
-		pf.getSearchLocation().sendKeys(location);
-		pf.getSearchLocation().sendKeys(Keys.ENTER);
-
+	public void user_able_to_enter_location_as_in_text_box(String location) {		
+       pf.getSearchLocation().sendKeys(location);
+       pf.getSearchLocation().sendKeys(Keys.ENTER);
 	}
 
-	@When("^User able to print  all property value/price in consule$")
-	public void user_able_to_print_all_property_value_price_in_consule() {
-	}
-
-	@When("^User able to click on the thard property$")
-	public void user_able_to_click_on_the_thard_property() {
+	@When("^User able to print  all property value/price in consule and click on thard property$")
+	public void user_able_to_print_all_property_value_price_in_consule() throws InterruptedException  {
+	pf.getElement();
+	pf.clickOnProperty();
+		
 	}
 
 	@Then("^Verify the price of the property$")
 	public void verify_the_price_of_the_property() {
+     String price = pf.getVerifyThePrice().getText();
+     System.out.println("My Property price : " + price);     
+     Assert.assertEquals(price, true);
+     
+     
 	}
 
 }

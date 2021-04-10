@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Automation Test Suite" duration-ms="8356" started-at="2021-04-03T15:47:52 EDT" finished-at="2021-04-03T15:48:01 EDT">
+  <suite name="Automation Test Suite" duration-ms="18553" started-at="2021-04-10T16:15:48 EDT" finished-at="2021-04-10T16:16:07 EDT">
     <groups>
       <group name="cucumber">
         <method signature="LoginRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ups.nj.myrunner.LoginRunner@48524010]" name="feature" class="ups.nj.myrunner.LoginRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="PMCS Login test" duration-ms="8356" started-at="2021-04-03T15:47:52 EDT" finished-at="2021-04-03T15:48:01 EDT">
+    <test name="PMCS Login test" duration-ms="18553" started-at="2021-04-10T16:15:48 EDT" finished-at="2021-04-10T16:16:07 EDT">
       <class name="ups.nj.myrunner.LoginRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:ups.nj.myrunner.LoginRunner@48524010]" name="setUpClass" is-config="true" duration-ms="259" started-at="2021-04-03T15:47:52 EDT" finished-at="2021-04-03T15:47:53 EDT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:ups.nj.myrunner.LoginRunner@48524010]" name="setUpClass" is-config="true" duration-ms="292" started-at="2021-04-10T16:15:48 EDT" finished-at="2021-04-10T16:15:49 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ups.nj.myrunner.LoginRunner@48524010]" name="feature" duration-ms="7969" started-at="2021-04-03T15:47:53 EDT" description="Runs LoginCandiate Feature" data-provider="features" finished-at="2021-04-03T15:48:01 EDT">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ups.nj.myrunner.LoginRunner@48524010]" name="feature" duration-ms="18065" started-at="2021-04-10T16:15:49 EDT" description="Runs LoginCandiate Feature" data-provider="features" finished-at="2021-04-10T16:16:07 EDT">
           <params>
             <param index="0">
               <value>
@@ -25,7 +25,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ups.nj.myrunner.LoginRunner@48524010]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2021-04-03T15:48:01 EDT" finished-at="2021-04-03T15:48:01 EDT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ups.nj.myrunner.LoginRunner@48524010]" name="tearDownClass" is-config="true" duration-ms="16" started-at="2021-04-10T16:16:07 EDT" finished-at="2021-04-10T16:16:07 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

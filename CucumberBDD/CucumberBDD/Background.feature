@@ -1,3 +1,4 @@
+@Automation
 Feature: User able to login with valid username & password
 
 Description: "User login zoopla website & search the property &"
@@ -13,7 +14,7 @@ Background:
 
 Scenario: User can search the property & verify the price 
 	Given User able to  enter location as  "New York, Lincolnshire" in text box
-	When User able to print  all property value/price in consule 
-	And User able to click on the thard property 
+	When User able to print  all property value/price in consule and click on thard property 
 	Then Verify the price of the property 
+	
 	

@@ -1,12 +1,19 @@
 package zoopla.pagefactory.elements;
 
+import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import Utilities.CommonUtility;
 import ups.nj.supperpage.CucumberBaseClass;
 
 public class ZooplaLoginPage extends CucumberBaseClass {
@@ -15,9 +22,7 @@ public class ZooplaLoginPage extends CucumberBaseClass {
 		PageFactory.initElements(driver, this);
 	}
 
-
-	
-	@FindBy(xpath = "(//*[text()='Sign in'])[1]") 
+	@FindBy(xpath = "(//*[text()='Sign in'])[1]")
 	@CacheLookup
 	private WebElement clickingSigninBTN;
 
@@ -32,8 +37,7 @@ public class ZooplaLoginPage extends CucumberBaseClass {
 	public WebElement getAcceptCookies() {
 		return acceptCookies;
 	}
-	
-	
+
 	@FindBy(id = "signin_email")
 	@CacheLookup
 	private WebElement sendUserName;
@@ -42,7 +46,6 @@ public class ZooplaLoginPage extends CucumberBaseClass {
 		return sendUserName;
 	}
 
-	
 	@FindBy(id = "signin_password")
 	@CacheLookup
 	private WebElement sendPwd;
@@ -51,16 +54,43 @@ public class ZooplaLoginPage extends CucumberBaseClass {
 		return sendPwd;
 	}
 	
-	@FindBy(name = "q")
+	@FindBy (xpath = "//*[@data-testid='price']")
+	@CacheLookup
+	private WebElement verifyPrice;
+	public WebElement getVerifyThePrice() {
+		return verifyPrice;
+	}
+	
+
+	@FindBy(id = "search-input-location")
 	@CacheLookup
 	private WebElement searchLocation;
 
 	public WebElement getSearchLocation() {
 		return searchLocation;
 	}
-
-
 	
-	// (//*[text()='Accept all cookies'])[2]
-	// *[@id='ui-cookie-consent-overlay-wrap']/descendant::button[2]
-}
+	public void getElement() {
+		List<WebElement> price = driver.findElements(By.xpath("//*[@size='6']"));
+	    System.out.println("Total property counting Num : "+ price.size());
+	    for (WebElement value : price) {
+	    	String priceValue = value.getText(); // getAttribute();	getText();   	
+	    	System.out.println("Property Price List : "+ priceValue);
+	    }
+	    
+	}
+	public void clickOnProperty() {
+		List<WebElement> element = driver.findElements(By.xpath("//*[@class='css-wfndrn-StyledContent e2uk8e18']"));
+		for (int i =0; i <element.size(); i++) {
+			if(i > 5) {
+				System.out.println("Selected property number : " + i);
+				element.get(i).click();
+				break;
+			}
+		}
+			
+		    }
+	     
+	
+	}
+
