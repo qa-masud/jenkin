@@ -60,7 +60,6 @@ public class ZooplaLoginPage extends CucumberBaseClass {
 	public WebElement getVerifyThePrice() {
 		return verifyPrice;
 	}
-	
 
 	@FindBy(id = "search-input-location")
 	@CacheLookup
