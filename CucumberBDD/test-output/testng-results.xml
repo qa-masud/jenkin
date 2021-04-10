@@ -2,34 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Automation Test Suite" duration-ms="14126" started-at="2021-04-10T16:49:21 EDT" finished-at="2021-04-10T16:49:35 EDT">
+  <suite name="Default suite" duration-ms="10553" started-at="2021-04-10T18:44:40 EDT" finished-at="2021-04-10T18:44:50 EDT">
     <groups>
-      <group name="cucumber">
-        <method signature="LoginRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ups.nj.myrunner.LoginRunner@48524010]" name="feature" class="ups.nj.myrunner.LoginRunner"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="PMCS Login test" duration-ms="14126" started-at="2021-04-10T16:49:21 EDT" finished-at="2021-04-10T16:49:35 EDT">
-      <class name="ups.nj.myrunner.LoginRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:ups.nj.myrunner.LoginRunner@48524010]" name="setUpClass" is-config="true" duration-ms="292" started-at="2021-04-10T16:49:21 EDT" finished-at="2021-04-10T16:49:21 EDT">
+    <test name="Default test" duration-ms="10553" started-at="2021-04-10T18:44:40 EDT" finished-at="2021-04-10T18:44:50 EDT">
+      <class name="com.readExcel.ReadExcelData">
+        <test-method status="PASS" signature="loginWebZooplaPage()[pri:0, instance:com.readExcel.ReadExcelData@55a561cf]" name="loginWebZooplaPage" duration-ms="10514" started-at="2021-04-10T18:44:40 EDT" finished-at="2021-04-10T18:44:50 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ups.nj.myrunner.LoginRunner@48524010]" name="feature" duration-ms="13683" started-at="2021-04-10T16:49:21 EDT" description="Runs LoginCandiate Feature" data-provider="features" finished-at="2021-04-10T16:49:35 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User able to login with valid username & password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ups.nj.myrunner.LoginRunner@48524010]" name="tearDownClass" is-config="true" duration-ms="15" started-at="2021-04-10T16:49:35 EDT" finished-at="2021-04-10T16:49:35 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- ups.nj.myrunner.LoginRunner -->
-    </test> <!-- PMCS Login test -->
-  </suite> <!-- Automation Test Suite -->
+        </test-method> <!-- loginWebZooplaPage -->
+      </class> <!-- com.readExcel.ReadExcelData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
