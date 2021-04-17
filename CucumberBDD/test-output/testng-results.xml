@@ -1,130 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="crossTesting" duration-ms="28142" started-at="2021-04-10T20:17:28 EDT" finished-at="2021-04-10T20:17:56 EDT">
+  <suite name="Automation Test Suite" duration-ms="9242" started-at="2021-04-17T15:15:03 EDT" finished-at="2021-04-17T15:15:13 EDT">
     <groups>
+      <group name="cucumber">
+        <method signature="LoginRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ups.nj.myrunner.LoginRunner@3c153a1]" name="feature" class="ups.nj.myrunner.LoginRunner"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="ChromeTest" duration-ms="9436" started-at="2021-04-10T20:17:28 EDT" finished-at="2021-04-10T20:17:37 EDT">
-      <class name="com.readExcel.CrossBrowserTesting">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.readExcel.CrossBrowserTesting@2aa5fe93]" name="setUp" is-config="true" duration-ms="2795" started-at="2021-04-10T20:17:28 EDT" finished-at="2021-04-10T20:17:31 EDT">
+    <test name="Zoopla Login test" duration-ms="9242" started-at="2021-04-17T15:15:03 EDT" finished-at="2021-04-17T15:15:13 EDT">
+      <class name="ups.nj.myrunner.LoginRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:ups.nj.myrunner.LoginRunner@3c153a1]" name="setUpClass" is-config="true" duration-ms="224" started-at="2021-04-17T15:15:03 EDT" finished-at="2021-04-17T15:15:04 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ups.nj.myrunner.LoginRunner@3c153a1]" name="feature" duration-ms="8913" started-at="2021-04-17T15:15:04 EDT" description="Runs LoginCandiate Feature" data-provider="features" finished-at="2021-04-17T15:15:13 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[User able to login with valid username & password]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginWebZooplaPage()[pri:0, instance:com.readExcel.CrossBrowserTesting@2aa5fe93]" name="loginWebZooplaPage" duration-ms="6604" started-at="2021-04-10T20:17:31 EDT" finished-at="2021-04-10T20:17:37 EDT">
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ups.nj.myrunner.LoginRunner@3c153a1]" name="tearDownClass" is-config="true" duration-ms="12" started-at="2021-04-17T15:15:13 EDT" finished-at="2021-04-17T15:15:13 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWebZooplaPage -->
-      </class> <!-- com.readExcel.CrossBrowserTesting -->
-    </test> <!-- ChromeTest -->
-    <test name="FirefoxTest" duration-ms="15085" started-at="2021-04-10T20:17:37 EDT" finished-at="2021-04-10T20:17:53 EDT">
-      <class name="com.readExcel.CrossBrowserTesting">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.readExcel.CrossBrowserTesting@290d210d]" name="setUp" is-config="true" duration-ms="4185" started-at="2021-04-10T20:17:37 EDT" finished-at="2021-04-10T20:17:42 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginWebZooplaPage()[pri:0, instance:com.readExcel.CrossBrowserTesting@290d210d]" name="loginWebZooplaPage" duration-ms="10897" started-at="2021-04-10T20:17:42 EDT" finished-at="2021-04-10T20:17:53 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWebZooplaPage -->
-      </class> <!-- com.readExcel.CrossBrowserTesting -->
-    </test> <!-- FirefoxTest -->
-    <test name="SafariTest" duration-ms="3516" started-at="2021-04-10T20:17:53 EDT" finished-at="2021-04-10T20:17:56 EDT">
-      <class name="com.readExcel.CrossBrowserTesting">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.readExcel.CrossBrowserTesting@27c86f2d]" name="setUp" is-config="true" duration-ms="1486" started-at="2021-04-10T20:17:53 EDT" finished-at="2021-04-10T20:17:54 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[safari]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginWebZooplaPage()[pri:0, instance:com.readExcel.CrossBrowserTesting@27c86f2d]" name="loginWebZooplaPage" duration-ms="2018" started-at="2021-04-10T20:17:54 EDT" finished-at="2021-04-10T20:17:56 EDT">
-          <exception class="org.openqa.selenium.NoSuchFrameException">
-            <message>
-              <![CDATA[
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Mohammeds-MBP.cable.rcn.com', ip: 'fe80:0:0:0:18e8:3ae9:1e4c:2f2d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20B29, safari:platformVersion: 11.0.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 6F4B7381-7A3B-444C-8E7B-9C9F47DCB9D2
-*** Element info: {Using=css selector, value=#signin_email}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchFrameException: 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Mohammeds-MBP.cable.rcn.com', ip: 'fe80:0:0:0:18e8:3ae9:1e4c:2f2d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.0.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20B29, safari:platformVersion: 11.0.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 6F4B7381-7A3B-444C-8E7B-9C9F47DCB9D2
-*** Element info: {Using=css selector, value=#signin_email}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.readExcel.CrossBrowserTesting.loginWebZooplaPage(CrossBrowserTesting.java:47)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWebZooplaPage -->
-      </class> <!-- com.readExcel.CrossBrowserTesting -->
-    </test> <!-- SafariTest -->
-  </suite> <!-- crossTesting -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- ups.nj.myrunner.LoginRunner -->
+    </test> <!-- Zoopla Login test -->
+  </suite> <!-- Automation Test Suite -->
 </testng-results>

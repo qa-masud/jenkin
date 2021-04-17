@@ -3,203 +3,10 @@
     "line": 2,
     "elements": [
       {
-        "line": 7,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 180453970,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User can open any browser",
-            "match": {
-              "location": "LoginStepDef.user_can_open_any_browser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1379733926,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User able to enter \"https://www.zoopla.co.uk/\" url",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://www.zoopla.co.uk/",
-                  "offset": 20
-                }
-              ],
-              "location": "LoginStepDef.user_able_to_enter_url(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1454516606,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User able to click on the login button",
-            "match": {
-              "location": "LoginStepDef.user_able_to_click_on_the_login_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 474814983,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User enter the userName \"alammohammed79@gmail.com\" and password \"SAYEDawan2008@\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "alammohammed79@gmail.com",
-                  "offset": 25
-                },
-                {
-                  "val": "SAYEDawan2008@",
-                  "offset": 65
-                }
-              ],
-              "location": "LoginStepDef.user_enter_the_userName_and_password(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1647386013,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User click on the signing button",
-            "match": {
-              "location": "LoginStepDef.user_click_on_the_signing_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7901435,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User able to verify successfully login \u0026 verify the homepage title",
-            "match": {
-              "location": "LoginStepDef.user_able_to_verify_successfully_login_verify_the_homepage_title()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
         "before": [
           {
             "result": {
-              "duration": 2726588914,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.applicationStart()"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "User can search the property \u0026 verify the price",
-        "description": "",
-        "id": "user-able-to-login-with-valid-username-\u0026-password;user-can-search-the-property-\u0026-verify-the-price",
-        "after": [
-          {
-            "result": {
-              "duration": 313166237,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3331078259,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User able to  enter location as  \"New York, Lincolnshire\" in text box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "New York, Lincolnshire",
-                  "offset": 34
-                }
-              ],
-              "location": "LoginStepDef.user_able_to_enter_location_as_in_text_box(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4027261009,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User able to print  all property value/price in consule and click on thard property",
-            "match": {
-              "location": "LoginStepDef.user_able_to_print_all_property_value_price_in_consule()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1783008855,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "Verify the price of the property",
-            "match": {
-              "location": "LoginStepDef.verify_the_price_of_the_property()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 14,
-            "name": "@sanity"
-          }
-        ]
-      }
-    ],
-    "name": "User able to login with valid username \u0026 password",
-    "description": "\nDescription: \"User login zoopla website \u0026 search the property \u0026\"\n      \"select  the  property as well as verify the property price.\"",
-    "id": "user-able-to-login-with-valid-username-\u0026-password",
-    "keyword": "Feature",
-    "uri": "Background.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@sanity"
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1835854157,
+              "duration": 2280789037,
               "status": "passed"
             },
             "match": {
@@ -214,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 154405433,
+              "duration": 147458759,
               "status": "passed"
             },
             "match": {
@@ -227,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1749893,
+              "duration": 148799865,
               "status": "passed"
             },
             "line": 8,
@@ -239,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1469086841,
+              "duration": 2042957171,
               "status": "passed"
             },
             "line": 9,
@@ -257,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 1403541716,
+              "duration": 1134717106,
               "status": "passed"
             },
             "line": 10,
@@ -269,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 369872254,
+              "duration": 545269908,
               "status": "passed"
             },
             "line": 11,
@@ -291,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 1732692299,
+              "duration": 24326364,
               "status": "passed"
             },
             "line": 12,
@@ -303,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 4436368,
+              "duration": 2567140112,
               "status": "passed"
             },
             "line": 13,

@@ -22,7 +22,7 @@ public class ZooplaLoginPage extends CucumberBaseClass {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "(//*[text()='Sign in'])[1]")
+	@FindBy(xpath = "(//*[text()='Sign in'])[2]")
 	@CacheLookup
 	private WebElement clickingSigninBTN;
 
@@ -38,7 +38,7 @@ public class ZooplaLoginPage extends CucumberBaseClass {
 		return acceptCookies;
 	}
 
-	@FindBy(id = "signin_email")
+	@FindBy(xpath = "//*[@type='email']")
 	@CacheLookup
 	private WebElement sendUserName;
 
@@ -46,7 +46,7 @@ public class ZooplaLoginPage extends CucumberBaseClass {
 		return sendUserName;
 	}
 
-	@FindBy(id = "signin_password")
+	@FindBy(xpath = "//*[@type='password']")
 	@CacheLookup
 	private WebElement sendPwd;
 

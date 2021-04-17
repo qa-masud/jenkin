@@ -4,15 +4,11 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-
 import org.testng.annotations.Parameters;
-
-
 import ups.nj.supperpage.CucumberBaseClass;
 
 public class CrossBrowserTesting extends CucumberBaseClass {
